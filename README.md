@@ -6,12 +6,11 @@
 
 Descargar e instalar la llave publica 
 
-``` rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch ```
+```rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch```
 
 Abrir en /etc/yum.repos.d/ el archivo logstash.repo con la siguiente configuración.
 
-```
-[logstash-5.x]
+```[logstash-5.x]
 name=Elastic repository for 5.x packages
 baseurl=https://artifacts.elastic.co/packages/5.x/yum
 gpgcheck=1
