@@ -30,8 +30,7 @@ Consultar la ruta de logstash y abrir la ruta obtenida
 
 En la ruta obtenida crear un archivo tipo .conf con el script(anteriormente darle permisos a /var/log/messages)
 
-```
-input{
+```input{
    file{
       path => "/var/log/messages"
       start_position => beginning
@@ -43,8 +42,8 @@ output {
         hosts => [ "localhost:9200" ]
         index => "indexname"
     }
-}
-```
+}```
+
 Ejecutar el siguiente comando cambiando el nombre del conf
 
 ```sudo bin/logstash -f name_task.conf ```
