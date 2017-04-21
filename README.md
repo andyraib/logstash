@@ -41,7 +41,8 @@ output {
         hosts => [ "localhost:9200" ]
         index => "indexname"
     }
-}```
+}
+```
 
 Ejecutar el siguiente comando cambiando el nombre del conf
 
