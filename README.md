@@ -29,7 +29,8 @@ Consultar la ruta de logstash y abrir la ruta obtenida
 
 En la ruta obtenida crear un archivo tipo .conf con el script(anteriormente darle permisos a /var/log/messages)
 
-```input{
+```
+input{
    file{
       path => "/var/log/messages"
       start_position => beginning
